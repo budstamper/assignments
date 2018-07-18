@@ -1,0 +1,35 @@
+html, body {
+}
+
+h1 {
+    color: darkgreen;
+    font-family: Georgia;
+    text-align: center;
+}
+
+h2{
+    font-family: Georgia;
+    text-align: center;
+}
+
+H6{
+    color: yellow;
+    text-align:center;
+}
+
+p{
+    text-align: left;
+    line-height: 25px;
+}
+
+p4{
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
