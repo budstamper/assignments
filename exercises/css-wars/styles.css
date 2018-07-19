@@ -15,6 +15,13 @@ p{
 }
 
 .credits{
-    background-color: blue;
-    text-underline-position: below;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#film-description{
+font-size: 50%;
+font-style: italic;
+
 }

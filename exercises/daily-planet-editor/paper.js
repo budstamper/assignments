@@ -10,8 +10,9 @@ just fix the existing ones.
 // Written by Kent, Clark
 
 var enemies=["Lex","Batman","Darkseid","Brainiac","General Zod","Doomsday"];
+var isThereKryptonite;
 
-funtion whoWins(isThereKryptonite, enemyName)
+function whoWins(isThereKryptonite, enemyName)
 {
     if (!isThereKryptonite){
         return "Superman beats " +enemyName+ ", of course";
@@ -24,7 +25,6 @@ funtion whoWins(isThereKryptonite, enemyName)
 
 for (var i=0;i<enemies.length;i++)
 {
-    var isThereKryptonite:
         if(i%2=== 0) {
             isThereKryptonite = true;
         } else {

@@ -18,11 +18,15 @@ H6{
 }
 
 p{
+    line-height: 25px;
+}
+
+p.p1{
     text-align: left;
     line-height: 25px;
 }
 
-p4{
+p.p4{
     text-transform: uppercase;
 }
 

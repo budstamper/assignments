@@ -1,0 +1,39 @@
+body{}
+html{}
+
+.classifieds{
+    border-style: dotted;
+    display: inline-block;
+    padding: 5px;
+    vertical-align: top;
+}
+
+.column{
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    margin: 0.25em auto
+}
+
+.classifiedImg{
+    width: 100px;
+    height: 100px;
+}
+
+p{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+h1 {
+ text-align: center;
+}
+
+h2{
+    text-align: center;
+}
