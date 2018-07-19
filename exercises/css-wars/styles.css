@@ -1,0 +1,20 @@
+body{
+    background-color: #111111;
+}
+
+h1{
+    background-color: #E2E80F;
+    text-align: center;
+    font-size: 110%;
+}
+
+p{
+    background-color: #eeeeee;
+    font-size: 210%;
+    margin-bottom: 10px
+}
+
+.credits{
+    background-color: blue;
+    text-underline-position: below;
+}
