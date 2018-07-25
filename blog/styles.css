@@ -1,0 +1,21 @@
+.navbar{
+    display: block;
+    position: fixed;
+    background-color: aqua;
+    height: 100px;
+    width: 100%;
+}
+
+.mid{
+    display:block;
+    height: 120px;
+}
+
+.content{
+    text-align: center;
+}
+
+.resize{
+    width:50px;
+    height: auto;
+}

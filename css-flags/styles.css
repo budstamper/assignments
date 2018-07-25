@@ -1,0 +1,273 @@
+*{
+    box-sizing: border-box;
+    font-size: 0px;
+}
+
+.france{
+    display: inline-block;
+    background-color: #Ffffff;
+    width:111px;
+    height: 87px;
+    border-left:37px solid blue;
+    border-right:37px solid red;
+    margin-right:5px;
+}
+
+.germany{
+    display: inline-block;
+    background-color: red;
+    width:111px;
+    height: 87px;
+    border-top:29px solid black;
+    border-bottom:29px solid yellow;
+    margin-right:5px;
+}
+
+.madagascar{
+    position: relative;
+    display: inline-block;
+    background-color:green;
+    width:111px;
+    height: 87px;
+    border-left:37px solid #ffffff;
+    margin-right:5px;
+} 
+
+#m1{
+    position: absolute;
+    background-color: red;
+    width: 74px;
+    height: 44px;
+}
+
+.switzerland{
+    position: relative;
+    display: inline-block;
+    background-color: red;
+    width:111px;
+    height: 87px;
+    margin-right: 5px;
+}
+
+#sw1{
+    position: absolute;
+    background-color: white;
+    width: 23px;
+    height: 53px;
+    margin-left:45px;
+    margin-top:17px
+}
+
+#sw2{
+    position: absolute;
+    background-color: white;
+    width: 67px;
+    height: 17px;
+    margin-left:22px;
+    margin-top:35px
+}
+
+.sweden{
+    position: relative;
+    display: inline-block;
+    background-color: deepskyblue;
+    width:111px;
+    height: 87px;
+    margin-right:5px;
+}
+
+#swe1{
+    position: absolute;
+    background-color: gold;
+    width: 111px;
+    height:17px;
+    margin-top: 35px;
+}
+
+#swe2{
+    position: absolute;
+    background-color: gold;
+    width: 22px;
+    height:87px;
+    margin-left: 33px;
+}
+
+.gambia{
+    position: relative;
+    display: inline-block;
+    background-color: blue;
+    width:111px;
+    height: 87px;
+    border-bottom:29px solid green;
+    margin-right:5px;
+    border-top: 29px solid red;
+}
+
+#g1{
+    position: absolute;
+    background-color: white;
+    width: 111px;
+    height: 7px;
+    margin-top: 29px;
+}
+
+#g2{
+    position: absolute;
+    background-color: white;
+    width: 111px;
+    height: 7px;
+    margin-bottom: 29px;
+}
+
+.tonga{
+    position: relative;
+    display: inline-block;
+    background-color: red;
+    width:111px;
+    height: 87px;
+    margin-right:5px;
+}
+
+#t1{
+    position: absolute;
+    background-color: white;
+    width:40px;
+    height: 44px;
+}
+
+#t2{
+    position: absolute;
+    background-color: red;
+    height: 27px;
+    width: 8px;
+    margin-left: 13px;
+    margin-top: 7px;
+}
+
+#t3{
+    position: absolute;
+    background-color: red;
+    height: 9px;
+    width: 27px;
+    margin-left: 4px;
+    margin-top: 16px
+}
+
+.japan{
+    position: relative;
+    display: inline-block;
+    background-color: white;
+    width:111px;
+    height: 87px;
+    margin-right:5px;
+}
+
+#j{
+    position: absolute;
+    border-radius: 50%;
+    background-color: red;
+    height: 60px;
+    width: 60px;
+    margin-top:11px;
+    margin-left: 25px;
+}
+
+.greece{
+    position: relative;
+    display: inline-block;
+    background-color: white;
+    width:111px;
+    height: 87px;
+    margin-right:5px;
+    border-bottom: 27px solid blue;
+    border-bottom-style: double;
+    border-top: 27px solid blue;
+    border-top-style: double;
+}
+
+#g1{
+    position: absolute;
+    background-color: blue;
+    height:10px;
+    width:111px;
+    margin-top: 12px;
+}
+
+#g2{
+    position: absolute;
+    background-color: blue;
+    height: 44px;
+    width: 45px;
+    margin-top: -27px;
+}
+
+#g3{
+    position: absolute;
+background-color: white;
+height: 49px;
+width: 8px;
+margin-left: 19px;
+margin-top: -27px;
+}
+
+#g4{
+position: absolute;
+background-color: white;
+height: 9px;
+width: 45px;
+margin-top: -9px;
+}
+
+.niger{
+    position: relative;
+    display: inline-block;
+    background-color: white;
+    width:111px;
+    height: 87px;
+    border-top:29px solid orangered;
+    border-bottom:29px solid green;
+    margin-right:5px;
+}
+
+#n{
+    position: absolute;
+    background-color: orangered;
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    margin-top:3px;
+    margin-left: 45px;
+}
+
+.maldives{
+    position: relative;
+    display: inline-block;
+    background-color: green;
+    width:111px;
+    height: 87px;
+    border-left:20px solid red;
+    border-top:26px solid red;
+    border-right: 20px solid red;
+    border-bottom: 26px solid red;
+    margin-right:5px;
+}
+
+#ma1{
+    position: absolute;
+    background-color: white;
+    height: 26px;
+    width: 26px;
+    margin-top: 5px;
+    margin-left: 24px;
+    border-radius: 50%;
+}
+
+#ma2{
+    position: absolute;
+    background-color: green;
+    height: 26px;
+    width: 26px;
+    margin-top: 5px;
+    margin-left: 29px;
+    border-radius: 50%;
+}
