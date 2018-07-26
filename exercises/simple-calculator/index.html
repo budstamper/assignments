@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>SIMPLE CALCULATOR</h1>
+    <h3>Enter two numbers in the fields provided then click the button to add, subtract, or multiply!</h3>
+
+    <div>
+
+        <form name="add" class="a">
+            <p>ADD</p>
+            <input type="number" name="add1" placeholder="First Number to Add">
+            <p>+</p>
+            <input type="number" name="add2" placeholder="Second Number to Add">
+            <p></p>
+            <button name="addBtn1" id="addBtn">submit</button>
+        </form>
+        <p>Result:</p>
+        <p id="addResult">Answer Displays Here</p>
+
+    </div>
+    <div>
+
+            <form name="subtract" class="b">
+                    <p>SUBTRACT</p>
+                        <input type="number" name="sub1" placeholder="First Number to Subtract">
+                        <p>-</p>
+                        <input type="number" name="sub2" placeholder="Second Number to Subtract">
+                        <p></p>
+                        <button id="subBtn">SUBTRACT</button>
+                </form>
+
+                <p>Result:</p>
+        <p id="subResult">Answer Displays Here</p>
+
+    </div>
+    <div>
+
+            <form name="multiply" class="c">
+                    <p>MULIPLTY</p>
+                        <input type="number" name="mul1" placeholder="First Number to Multiply">
+                        <p>*</p>
+                        <input type="number" name="mul2" placeholder="Second Number to Mulitply">
+                        <p></p>
+                        <button id="mulBtn">MULTIPLY</button>
+        
+                </form>
+
+                <p>Result:</p>
+        <p id="mulResult">Answer Displays Here</p>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

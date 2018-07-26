@@ -28,6 +28,55 @@ function strger(str){
     if(str.length<20){
         return str+=str;
     } else{
-        return str.slice(Mth.round(str.length/2);
+        return str.slice(Math.round(str.length/2));
     }
 }
+
+function fib(n){
+    var sum = new Array(n);
+    if(n===1){console.log("1");return 1;}
+    else if(n===2) {console.log("1 and 1"); return 2;}
+    else{
+        console.log('1');
+        console.log('1');
+    var sum1=0;
+    sum[0]=1;
+    sum[1]=1;
+    for(var i=2;i<=n;i++){
+        
+        sum[i]=sum[i-1]+sum[i-2];
+        sum1=sum1+sum[i];
+        console.log(sum[i]);
+    }
+    return sum1;
+}}
+
+function quadEq(a, b, c){
+    var arr = [((b*-1)-(Math.sqrt((b*b)-(4*a*c))))/(2*a), ((b*-1)+(Math.sqrt((b*b)-(4*a*c))))/(2*a)]
+    return arr;
+}
+
+function howManyRepeated(str){
+     str = str.toLowerCase();
+     var arr = str.split("");
+     arr.sort()
+     var mostFreq = "";
+     var rCount = 0;
+     var mCount = 0;
+     var currentLetter = "";
+
+     for(var i =0;i<arr.length;i++){
+         if(currentLetter !== arr[i]){rCount=0; currentLetter=arr[i];}
+         rCount++;
+        currentLetter=arr[i];
+        if(rCount>=mCount){
+            mCount=rCount;
+            mostFreq=currentLetter;
+        }
+     }
+     console.log(mostFreq);
+     return mostFreq;
+    
+ }
+
+ howManyRepeated("rrtttyyyyaaaaaaadcccccccccc");

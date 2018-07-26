@@ -1,0 +1,25 @@
+body{
+    background-image: url(https://orig00.deviantart.net/22d8/f/2014/191/a/e/super_mario_collage_by_janellelovesudon-d7q45n2.jpg);
+
+}
+
+footer{
+    background-color: white;
+}
+
+h1{
+    background-color: brown;
+    font-size: 150%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+ol{
+    display: inline-block;
+}
+
+li{
+    background-color: aqua;
+
+    width: 300px;
+}

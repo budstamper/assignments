@@ -185,7 +185,7 @@
     border-top-style: double;
 }
 
-#g1{
+#gr1{
     position: absolute;
     background-color: blue;
     height:10px;
@@ -193,7 +193,7 @@
     margin-top: 12px;
 }
 
-#g2{
+#gr2{
     position: absolute;
     background-color: blue;
     height: 44px;
@@ -201,7 +201,7 @@
     margin-top: -27px;
 }
 
-#g3{
+#gr3{
     position: absolute;
 background-color: white;
 height: 49px;
@@ -210,7 +210,7 @@ margin-left: 19px;
 margin-top: -27px;
 }
 
-#g4{
+#gr4{
 position: absolute;
 background-color: white;
 height: 9px;

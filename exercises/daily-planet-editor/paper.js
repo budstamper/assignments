@@ -9,7 +9,7 @@ just fix the existing ones.
 
 // Written by Kent, Clark
 
-var enemies=["Lex","Batman","Darkseid","Brainiac","General Zod","Doomsday"];
+var enemies=["Lex","Batman","Darkside","Brainiac","General Zod","Doomsday"];
 var isThereKryptonite;
 
 function whoWins(isThereKryptonite, enemyName)
@@ -39,7 +39,7 @@ function howAttractedIsLoisLaneToMe ()
     return Math.floor((Math.random()*10)+1);
 }
 
-consol.log( howAttractedIsLoisLaneToMe ()) ;
+console.log( howAttractedIsLoisLaneToMe ()) ;
 
 var clarkKent =true;
 var superman =false;
