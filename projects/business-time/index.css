@@ -3,6 +3,10 @@ html{
     background-image: url(http://www.castaliahouse.com/wp-content/themes/blue-peace-modified/img/bg.jpg);
 }
 
+body{
+    text-align: center;
+}
+
 .title{
     text-align: center;
     margin:20px;
@@ -16,10 +20,6 @@ html{
     border: 3px solid #d4af37;
     padding: 20px;
     
-}
-
-.statement{
-    text-align: center;
 }
 
 .link{
@@ -41,14 +41,17 @@ html{
 
 #contact{
     margin-left: 30px;
-    color: white;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .blue{
-    margin-top: 150px;
-    padding: 70px;
-    margin-left: 300px;
-    margin-right: 300px;
+    display: inline-block;
+    padding: 50px;
     background-color: #B1C9FF99;
 }
 
@@ -56,9 +59,69 @@ html{
     margin-top:10px;
     border: 5px dotted solid black;
     text-align: center;
-    
 }
 
 .p1{
     text-align: center;
+    margin-top: 80px;
 }
+
+
+.start {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+    color: white;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    font-size: 1em;
+    border-radius: 5px;
+  }
+  
+  
+  #phone{
+    width: 30px;
+    height: auto;
+  }
+
+  @media only screen and (max-width: 768px){
+
+    #Indy{
+        margin-right:25px;
+    }
+
+    #i1{
+        display:none;
+    }
+
+    .flexer{
+        margin-bottom: 0px;
+        font-size: 0.8em;
+        border-radius: 3px;
+        justify-content: space-evenly;
+    }
+
+
+    .blue{
+        display: inline-block;
+        padding: 20px;
+        margin:30px 50px 0px 50px;
+        background-color: #B1C9FF99;
+        border-radius: 5px;
+    }
+    
+    .mission{
+        margin-top:10px;
+        border: 5px dotted solid black;
+        text-align: center;
+    }
+    
+    .p1{
+        text-align: center;
+        margin-top: 80px;
+    }
+
+  }

@@ -3,11 +3,15 @@ html{
     background-image: url(http://www.castaliahouse.com/wp-content/themes/blue-peace-modified/img/bg.jpg);
 }
 
+body{
+    text-align: center;
+}
+
 
 .flexer{
     display:flex;
     justify-content: space-evenly;
-    margin-bottom: 100px;
+    margin-bottom: 0px;
     border: 3px solid #d4af37;
     padding: 20px;
     
@@ -33,4 +37,59 @@ html{
 
 #contact{
     margin-left: 30px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px;
+}
+
+article{
+    padding: 50px;
+    margin: 50px;
+    text-align: center;
+    font-size: 1.5em;
+    background-color: #99E89688;
+    border-radius: 5px;
+    padding: 30px;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px){
+
+    .flexer{
+        margin-bottom: 20px;
+        font-size: 0.8em;
+    }
+
+    #Indy{
+        margin-right:25px;
+    }
+
+    #i1{
+        display:none;
+    }
+
+    .body2{
+        display: inline-block;
+        padding: 10px;
+        margin:30px 15px 0px 15px;
+        font-size: 0.6em;
+    }
+
 }

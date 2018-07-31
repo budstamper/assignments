@@ -1,0 +1,44 @@
+@font-face{
+    font-family: mtest;
+    src: url(SuperMario256.ttf);
+}
+
+body{
+    font-family: mtest;
+    font-size: 1.5em;
+}
+
+#top{
+    background-color: yellow;
+    color: red;
+    display: flex;
+    align-items:center;
+
+}
+
+#luigi{
+    background-color: red;
+    display: flex;
+    justify-content: center;
+
+}
+
+#text{
+    display: flex;
+    color: red;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#p1{
+    width:350px;
+    text-align: center;
+}
+
+#shroom{
+    display: flex;
+    background-color: yellow;
+    justify-content: flex-end;
+    height: 100px;
+}

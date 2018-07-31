@@ -1,6 +1,5 @@
 html{
     font-family: "Palatino Linotype", 'Times New Roman', Times, serif;
-    background-image: url(http://www.castaliahouse.com/wp-content/themes/blue-peace-modified/img/bg.jpg);
 }
 
 
@@ -33,4 +32,48 @@ html{
 
 #contact{
     margin-left: 30px;
+}
+
+.img1{
+    height: 300px;
+    width: 300px;
+}
+
+@media only screen and (max-width: 768px){
+
+    .flexer{
+        margin-bottom: 20px;
+        font-size: 0.8em;
+    }
+
+    #i1{
+        display:none;
+    }
+
+    .img1{
+        height: 100px;
+        width: 100px;
+    }
+
+    #Indy{
+        margin-right:25px;
+    }
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1000px){
+
+    .img1{
+        height: 200px;
+        width: 200px;
+    }
+
+    #i1{
+        display:none;
+    }
+
+    #Indy{
+        margin-right:25px;
+    }
+
 }
