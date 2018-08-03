@@ -1,0 +1,1 @@
+In this lesson I was to make a function that would take a string as a parameter and log the recurring characters of the string. I ordered them based on most recurring to least recurring and printed a resulting string with no duplicates.

@@ -1,0 +1,1 @@
+In this lesson I created a sample news page with an article and classifieds section.

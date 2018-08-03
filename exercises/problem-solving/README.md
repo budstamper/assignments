@@ -1,0 +1,1 @@
+In this lesson I created three functions. One to print largest number, one to print array elements which contained certain characters, and one to log to the console whether a number was a divisor of another.

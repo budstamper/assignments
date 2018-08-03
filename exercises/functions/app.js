@@ -32,6 +32,8 @@ function strger(str){
     }
 }
 
+//prints fibonnaci sequence up to n
+
 function fib(n){
     var sum = new Array(n);
     if(n===1){console.log("1");return 1;}
@@ -51,10 +53,14 @@ function fib(n){
     return sum1;
 }}
 
+//the quadratic equation
+
 function quadEq(a, b, c){
     var arr = [((b*-1)-(Math.sqrt((b*b)-(4*a*c))))/(2*a), ((b*-1)+(Math.sqrt((b*b)-(4*a*c))))/(2*a)]
     return arr;
 }
+
+//find repeated characters in string
 
 function howManyRepeated(str){
      str = str.toLowerCase();

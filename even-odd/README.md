@@ -1,0 +1,1 @@
+In this lesson I created a simple function to log whether a number was even or odd. I learned how to use the modulus opertor for this lesson.

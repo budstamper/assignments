@@ -1,0 +1,1 @@
+In this lesson I styled a webpage to show color blocks that took up percentages of the screen.

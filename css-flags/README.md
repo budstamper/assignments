@@ -1,0 +1,1 @@
+In this lesson I used styling (not images) to recreate the flags of several countries. I learned relative and absolute positioning techniques.

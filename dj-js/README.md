@@ -1,0 +1,1 @@
+In this lesson I manipulated the DOM of the webpage to change the color of a box based on mouse hover, click, dbl click, and keyboard events.

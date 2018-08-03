@@ -1,0 +1,1 @@
+In this lesson I created a terminal calculator using readline-sync questions to take inputs.

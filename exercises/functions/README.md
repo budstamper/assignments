@@ -1,0 +1,1 @@
+In this lesson I was to write several functions to log an output to the console or return the result of some numerical operation.

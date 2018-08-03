@@ -1,0 +1,1 @@
+In this lesson I used functions to manipulate strings.

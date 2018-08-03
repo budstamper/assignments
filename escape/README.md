@@ -1,0 +1,1 @@
+In this lesson I created a simple text adventure game using readline-sync question methods.

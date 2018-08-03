@@ -1,0 +1,1 @@
+In this lesson I was to use if statements to log various aspects of strings.

@@ -1,0 +1,1 @@
+In this lesson I created a constructor function to create employee objects. I then created some sample employees.

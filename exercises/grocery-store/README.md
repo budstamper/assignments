@@ -1,0 +1,1 @@
+In this lesson I was to create an object of a shopper with various key-properties such as an array and a nested object.

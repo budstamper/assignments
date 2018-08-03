@@ -1,0 +1,1 @@
+In this lesson I learned how to use the Mac terminal to make directories and copy them to different directories.

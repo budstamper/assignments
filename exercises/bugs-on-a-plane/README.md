@@ -1,0 +1,1 @@
+In this lesson I debugged an alert form to show the proper outputs.

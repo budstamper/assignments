@@ -1,0 +1,1 @@
+In this lesson I expanded on the color-grid lesson to make it responsive at a certain screen size.

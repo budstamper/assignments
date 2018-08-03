@@ -1,0 +1,1 @@
+In this lesson I created a sample blog and styled it. I created a fixed navbar.

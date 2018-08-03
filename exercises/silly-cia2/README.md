@@ -1,0 +1,1 @@
+In this lesson I created a webpage article with basic styling features.

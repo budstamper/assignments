@@ -1,0 +1,1 @@
+In this lesson I was to log something to the console.
