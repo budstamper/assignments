@@ -1,0 +1,1 @@
+In this lesson we used higher order functions (functions that call functions) to manipulate arrays.

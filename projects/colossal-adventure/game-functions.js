@@ -353,7 +353,11 @@ function run(){
         console.log(`The ${enemy} damages you ${damage} as you flee.`)
         return true;
     } else{
-        Console.log(`The ${enemy} catches up to you.`)
+        var damage = Math.floor(MAth.random()*enemy.attack);
+        player.health-=damage;
+        Console.log(`The ${enemy} catches up to you.`);
+        wait(2)
+        console.log(`The ${enemy} damages you ${damage}.`)
         return false;}
 
 }

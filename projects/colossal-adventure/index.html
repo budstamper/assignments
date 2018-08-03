@@ -1,18 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Carne</title>
     <link rel="stylesheet" href="styles.css">
 
-</head>
-<body>
+    </head>
+    <body>
 
-    <audio id="music" src="Gates of Hell.mp3"></audio>
-    
+        <div class="Aligner">
+            <div class="Aligner-item"><h1>Welcome to Carne</h1><p>[You must open your browser console to play the game]</p></div>
+        </div>
 
-    <script src="app.js"></script>
-</body>
+        <audio id="music" src="Gates of Hell.mp3"><source src="Gates of Hell.mp3"></audio>
+        <script>
+            var myMusic = document.getElementById("music");
+            myMusic.play();
+            
+            var myAudio = new Audio('Gates of Hell.mp3'); 
+            myAudio.addEventListener('ended', function() {
+                this.currentTime = 0;
+                this.play();
+            }, false);
+            myAudio.play();
+            </script>
+
+        <script src="app.js"></script>
+    </body>
 </html>
