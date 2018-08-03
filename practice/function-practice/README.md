@@ -1,0 +1,1 @@
+In this session we created several functions to perform operations on numbers strings or arrays.

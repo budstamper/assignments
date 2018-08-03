@@ -1,0 +1,1 @@
+In this exercises I was to create a working readline sync to alter inputed strings.

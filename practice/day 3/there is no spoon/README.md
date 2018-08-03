@@ -1,0 +1,1 @@
+In this session I made several objects with multiple prperties.

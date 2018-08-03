@@ -1,0 +1,1 @@
+This folder is full of small pieces of code that we were to write in order to fulfil certain criteria as a warmup or small challenge in class.

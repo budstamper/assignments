@@ -1,0 +1,1 @@
+In this session we were given an array of lyrics and we made alterations to that array. for instance using the reverse() method.

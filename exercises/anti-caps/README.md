@@ -1,0 +1,1 @@
+In this lesson I switched the case of letters in a string.

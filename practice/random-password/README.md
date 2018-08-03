@@ -1,0 +1,1 @@
+In this session we were to create a random password generator with length as an input.

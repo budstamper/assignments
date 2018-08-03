@@ -1,0 +1,1 @@
+In this session we used the modulo operator to push certain strings into an array.

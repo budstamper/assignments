@@ -435,13 +435,7 @@ function run(enmy){
 
 function fight(str){
     var fightEnd = false;
-    if(str===''){
-        var random = Math.floor(Math.random()*enemiesList.length);
-        enemy = enemiesList[random];
-        console.log(enemiesList[random].entrance);
-        wait(1);
-        console.log(`A ${enemy.name} appears.`)
-    }else{
+    if(str==="LionTamer"){
         enemy = lionTamer;
         wait(8);
         console.log(enemy.entrance);
@@ -462,6 +456,12 @@ function fight(str){
         player.health+=100;
         player.defense+=3;
         player.attack+=5;
+    } else{
+        var random = Math.floor(Math.random()*enemiesList.length);
+        enemy = enemiesList[random];
+        console.log(enemiesList[random].entrance);
+        wait(1);
+        console.log(`A ${enemy.name} appears.`)
     }
     
     var choice;

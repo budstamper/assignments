@@ -1,0 +1,1 @@
+In this session we looped through arrays of objects to print objects with certain key values.

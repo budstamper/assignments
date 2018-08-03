@@ -1,0 +1,1 @@
+In this session we were to remove duplicate characters from strings.

@@ -1,0 +1,1 @@
+In this lesson we created several functions to create an arr of a variable size and then perform operations that iterated through all the elements of that array.
