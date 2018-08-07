@@ -473,13 +473,14 @@ function fight(str){
         else{console.log("[You have to do something.]")}
         if(player.health<=0){fightEnd=true;}
         else if(enemy.health<=0){
-            if(enemy.name="lion Tamer"){lionTamer=true;}
+            if(enemy.name==="lion Tamer"){lionTamer=true;}
             fightEnd=true;
             var a = Math.floor(Math.random()*(1.2)*items.length);
             if(a<items.length){
                 if((items[a].unique===true && items[a].gotten!==true) || items[a].unique===false){
+                    console.log(items[a].entrance)
                     console.log(`You have acquired ${items[a].name} from the ${enemy.name}!`)
-                    items[a].item();
+                    items[a].item(); 
                     if(items[a].unique===true){items[a].gotten=true;}
                 } else{console.log(`The ${enemy.name} had nothing of value.`)}
             } else{console.log(`The ${enemy.name} had nothing of value.`)}

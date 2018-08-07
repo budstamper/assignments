@@ -1,0 +1,1 @@
+In this lesson we are to redo the multiple array methods practice from yesterday with test driven development.

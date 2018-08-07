@@ -1,0 +1,103 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.row1{
+    display: flex;
+    
+}
+
+.row2{
+    display: flex;
+}
+
+.dj1{
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    margin: 10px;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.dj1:hover{
+    border-radius: 20px;
+    width: 100px;
+}
+
+.dj2{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    margin: 10px;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.dj2:hover{
+    height: 100px;
+    border-radius: 0px 30px 30px 0px;
+}
+
+.dj3{
+    height: 200px;
+    width: 200px;
+    background-color:red;
+    margin: 10px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.dj3:hover{
+    background-color: brown;
+    border: 5px dotted black;
+}
+
+.dj4{
+    height: 200px;
+    width: 200px;
+    background-color: orange;
+    margin: 10px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.dj4:hover{
+    border: 10px solid black;
+    margin-top: 50px;
+
+}
+
+.dj5{
+    height: 200px;
+    width: 200px;
+    background-color: purple;
+    margin: 10px;
+    border-radius: 20px;
+    text-align: center;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.dj5:hover{
+    padding:50px;
+    border-radius: 0;
+}
+.dj6{
+    height: 200px;
+    width: 200px;
+    background-color: grey;
+    margin: 10px;
+    text-align: center;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.dj6:hover{
+    font-size: 40px;
+    background-color: rgba(128, 128, 128, 0.466);
+}

@@ -8,3 +8,6 @@ Create a function that:
 
 Extra-extra-credit:
 +Do not allow any variation of the word to be saved as a duplicate. For example, if "brick" was entered your dictionary would reject "bricks" as a new word.
+
+
+-- I was able to slove the extra credit by incorporating the "compromise" NLP with "npm install compromise" and then using simple comands was able to fullfil.
