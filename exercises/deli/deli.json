@@ -1,0 +1,23 @@
+{
+    "appetizers":[
+        {"name":"bacon", "ingredients":["bacon", "more bacon"], "description": "Americ's favorite: bacon!"},
+        {"name":"cheese", "ingredients": ["curds", "wey"], "description":"It came from a cow!"},
+        {"name":"crackers", "ingredients":["crackers", "salt"], "description":"Toasty!"}],
+    "cold-sandwiches": [
+        {"name":"turkey club", "ingredients": ["turkey", "clubs"], "description":"A classic all white meat sandwhich" },
+        {"name":"ham and cheese", "ingredients": ["ham", "cheese", "bread probably"], "description": "the standard meal in commie countries"},
+        {"name":"veggie aupreme", "ingredients":["lettuce", "tomato"], "description":"Pulled straight from our botanical garden"}],
+    "hot-sandwiches":[
+        {"name":"bacon", "ingredients":["bacon", "more bacon", "bread"], "description":"Hot Bacon Sandwich"}, 
+        {"name":"grilled cheese", "ingredients":["cheese", "wheat bread"], "description": "Cheese sandwich grilled to perfection"},
+        {"name":"grilled mushroom", "ingredients":["portabello", "cheese"], "description":"protabello topped with cheese, no bread needed!"}],
+    "desserts":[
+        {"name":"ice-cream", "ingredients":["milk", "freezing"], "description":"Frozen milk in vanilla and chocolate flavors"},
+        {"name":"cake","ingredients":["milk", "flour", "frosting"], "description":"Let them eat cake!"},
+        {"name":"pie", "ingredients":["sugar", "piecrust", "some kind of filling"], "description":"Apple, cherry pie!"}],
+    "drinks":[
+        {"name":"coke","ingredients":["sugar", "water"], "description":"Fizzy water with sugar"},
+        {"name":"juice", "ingredients":["pulverized fruits", "water"], "description":"Fruity!"},
+        {"name":"water", "ingredients":["just water"], "description":"hand laddled from natural mountain springs"},
+        {"name":"milk", "ingredients":["vitamin D", "calcium"], "description":"Comes from Amish milked cows."}]
+}

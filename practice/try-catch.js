@@ -1,3 +1,6 @@
+
+
+
 function addThree(a, b, c){
     if(typeof a !== 'number' || typeof b !== 'number' || typeof c !== 'number'){throw "Enter 3 numbers"}
     var x = a+b+c
@@ -10,3 +13,5 @@ try{
 } catch(err){
     console.log(err)
 }
+
+
