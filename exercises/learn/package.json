@@ -1,8 +1,13 @@
 {
-  "name": "axios",
+  "name": "learn",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "axiosSyntax.js",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "readline-sync": "^1.4.9"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

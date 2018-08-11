@@ -1,0 +1,232 @@
+html, body {  
+    background-color: #ffeead;
+    margin: 10px;
+  }
+
+  .container1 {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 100px 100px;
+}
+
+.border{
+    border-radius: 10px;
+}
+
+.red{
+    background-color: red;
+    grid-column-start:1;
+    grid-column-end: 3;
+    border-radius: 10px;
+}
+
+.blue{
+    background-color: blue;
+    grid-column-start:3;
+    grid-column-end: 5;
+    border-radius: 10px;
+}
+
+.green{
+    background-color: green;
+    grid-column-start:1;
+    grid-column-end: 2;
+    border-radius: 10px;
+}
+
+.purple{
+    background-color: purple;
+    grid-column-start:2;
+    grid-column-end: 5;
+    border-radius: 10px;
+}
+
+.yellow{
+    background-color: yellow;
+    grid-column-start:1;
+    grid-column-end: 5;
+    border-radius: 10px;
+}
+
+
+.container2 {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 100px 100px;
+}
+
+#red2{
+    background-color: red;
+    grid-column-start:1;
+    grid-column-end: 5;
+}
+
+#blue2{
+    background-color: blue;
+    grid-column-start:1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end:4;
+}
+
+#green2{
+    background-color: green;
+    grid-column-start:3;
+    grid-column-end: 5;
+}
+
+#purple2{
+    background-color: purple;
+    grid-column-start:3;
+    grid-column-end: 4;
+}
+
+#purple2-a{
+    background-color: purple;
+    grid-column-start:4;
+    grid-column-end: 5;
+}
+
+.container3 {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 100px 100px;
+}
+
+#red3{
+    background-color: red;
+}
+
+#blue3{
+    background-color: blue;
+}
+
+#red3{
+    background-color: red;
+}
+
+#blue3{
+    background-color: blue;
+}
+
+#red4{
+    background-color: red;
+}
+
+#blue4{
+    background-color: blue;
+}
+
+#red5{
+    background-color: red;
+}
+
+#blue5{
+    background-color: blue;
+}
+
+#red6{
+    background-color: red;
+}
+
+#blue6{
+    background-color: blue;
+}
+
+#red7{
+    background-color: red;
+}
+
+#blue7{
+    background-color: blue;
+}
+
+#red8{
+    background-color: red;
+}
+
+#blue8{
+    background-color: blue;
+}
+
+
+@media (max-width: 768px){
+
+    .container3 {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 100px 100px 100px 100px 100px 100px;
+        grid-template-areas: 
+        "b3 a3" 
+        "b4 a4"
+        "b5 a5"
+        "b6 a6"
+        "b7 a7"
+        "b8 a8";
+    }
+
+    #red3{
+        background-color: red;
+        grid-area: a3;
+    }
+    
+    #blue3{
+        background-color: blue;
+        grid-area: b3;
+    }
+
+    #red4{
+        background-color: red;
+        grid-area: a4;
+    }
+    
+    #blue4{
+        background-color: blue;
+        grid-area: b4;
+    }
+
+    #red5{
+        background-color: red;
+        grid-area: a5;
+    }
+    
+    #blue5{
+        background-color: blue;
+        grid-area: b5;
+    }
+
+    #red6{
+        background-color: red;
+        grid-area: a6;
+    }
+    
+    #blue6{
+        background-color: blue;
+        grid-area: b6;
+    }
+
+    #red7{
+        background-color: red;
+        grid-area: a7;
+    }
+    
+    #blue7{
+        background-color: blue;
+        grid-area: b7;
+    }
+
+    #red8{
+        background-color: red;
+        grid-area: a8;
+    }
+    
+    #blue8{
+        background-color: blue;
+        grid-area: b8;
+    }
+
+}
