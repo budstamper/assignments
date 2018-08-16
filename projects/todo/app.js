@@ -10,8 +10,7 @@ axios.get(`https://api.vschool.io/${name}/todo`).then(function(response){
     console.log(err)
 })
 
-//check if name changed every second
-var nameInterval = setInterval(function(){
+document.getElementById("name").addEventListener('change', function(){
     console.log(document.getElementById('name').value)
     if(name !== document.getElementById('name').value){
         name = document.getElementById('name').value
@@ -23,9 +22,10 @@ var nameInterval = setInterval(function(){
             console.log(err)
         })
     }
-}, 1000)
+})
 
-function displayData(arr){
+
+function displayData(obj){
     //grab list from html
     var display = document.getElementById('list')
     display.innerHTML = ''
@@ -39,6 +39,8 @@ function displayData(arr){
             <h1 class="box"><input type="checkbox" name="vehicle" value="jk" class="check" checked>${arr[i].title}</h1>
             <p> Description: ${arr[i].description}</p>
             <p> Price: ${arr[i].price} </p>
+
+            <button value="Delete"></button>
             `
         }else{
             display.innerHTML += `
@@ -68,6 +70,7 @@ xhr.open("GET", "https://swapi.co/api/people/1/", true)
 xhr.send()
 
 document.post.addEventListener('submit' ,function(e){
+    e.preventDefault()
 
     var postNote = {
         title: document.post.title.value,
