@@ -1,0 +1,66 @@
+@font-face{
+    font-family: 'Baskerville';
+    src: url('./resources/kmKnZrc3Hgbbcjq75U4uslyuy4kn0qNZaxMaC82U.woff2') format('woff2')
+}
+
+@font-face{
+    font-family: 'wyrs';
+    src: url('./resources/kmKhZrc3Hgbbcjq75U4uslyuy4kn0qNcWxEQDO-Wyrs.woff2') format('woff2')
+}
+
+@font-face{
+    font-family: 'hhg';
+    src: url('./resources/1Pt2g8TAX_SGgBGUi0tGOYEga5WOwnsXy6KHHg.woff2') format('woff2')
+}
+
+@font-face{
+    font-family: 'moderna';
+    src: url('./resources/verdemoderna.woff') format('woff')
+}
+
+html{
+
+}
+
+body{
+
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+    "h h" 
+    "l r"
+    "b b";
+}
+
+.main{
+    background-image: url('./resources/huntington.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    grid-area: h;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'hhg';
+}
+
+.title{
+    line-height: 2em;
+}
+
+.basker{
+    font-family: "baskerville";
+}
+
+.left{
+    grid-area: l;
+}
+
+.right{
+    grid-area: r;
+}
+
+.bottom{
+    grid-area: b;
+}
