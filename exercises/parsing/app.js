@@ -5,9 +5,12 @@ xhr.onreadystatechange = function(){
     if(xhr.readyState == 4 && xhr.status == 200){
         // parsing is turning raw JSON data (string) into a JS object we can access.
         var data = JSON.parse(xhr.responseText)
+        console.log(data)
         parsePokemon(data)
     }
 }
+
+
 
 
 

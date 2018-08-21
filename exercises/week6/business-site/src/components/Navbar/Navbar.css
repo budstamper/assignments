@@ -1,0 +1,33 @@
+#contact {
+    background-color: blue;
+}
+
+
+.nav{
+    padding: 10px;
+    display: grid;
+    margin: 10px;
+    grid-column-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    grid-template-areas:
+    "h i"
+}
+
+.home{
+    border: 3px solid green;
+    padding: 5px;
+    background-color: white;
+    grid-area: h;
+    text-decoration: none;
+    color: black;
+}
+
+.info{
+    border: 3px solid green;
+    padding: 5px;
+    background-color: white;
+    grid-area: i;
+    text-decoration: none;
+    color: black;
+}

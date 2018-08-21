@@ -4,7 +4,10 @@ var xhr = new XMLHttpRequest()
 var name = document.getElementById('name').value
 console.log(name)
 
-axios.get(`https://api.vschool.io/${name}/todo`).then(function(response){
+
+//`https://api.vschool.io/${name}/todo`
+axios.get(`http://eyewatch20.com/home/budthestud1/public_html/`).then(function(response){
+    console.log(response.data)
     displayData(response.data)
 }).catch(function(err){
     console.log(err)

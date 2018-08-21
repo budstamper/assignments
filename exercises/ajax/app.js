@@ -19,8 +19,8 @@
 // AJAX - Asynchronous Javascript and XML  (Extensible Markup Language)
 
     // readystate, onreadystatechange
-var xhr = new XMLHttpRequest()
-console.log(xhr)
+    var xhr = new XMLHttpRequest();
+    console.log(xhr)
 
 xhr.onreadystatechange = function(){
     if(xhr.readyState == 4 && xhr.status == 200){
@@ -32,7 +32,7 @@ xhr.onreadystatechange = function(){
 
 
         // 1. request type   2. URL    3. Is Asynchronous
-xhr.open("GET", "https://swapi.co/api/people/1/", true)
+xhr.open("GET", "http://eyewatch20.com/home/budthestud1/public_html/", true)
 xhr.send()
 
 
