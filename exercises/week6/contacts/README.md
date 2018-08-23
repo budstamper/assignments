@@ -1,3 +1,7 @@
+This exercise was quite challenging as there is a quite complex nesting of functions and arrays to achieve the final result.
+
+
+Instructions
 Build a simple React app that has a <FriendList /> component, a <Friend /> component and a <Pet /> component.
 
 .map() through an array of friends. Each friend will have an array of pets. Feel free to use the one at the bottom of this write up. In your .map(), render a <Friend /> component, passing through the name, age, and pets of each friend as props.

@@ -1,6 +1,6 @@
 import React from 'react';
-import Friendlist from './src/Friendlist';
-import 'App.css'
+import Friendlist from './components/Friendlist';
+import './App.css';
 
 const App = () => {
     return(

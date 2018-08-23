@@ -62,34 +62,31 @@ const App = () => {
         }
       ]
 
-      const displayPets;
-
       const displayFriends = friends.map((friend, i)=>{
-          return <li key={friend.name+i}
-                    name={friends.name}
-                    age={friend.age}></li>
+          return <Friend key={friend.name+i}
+                    name={friend.name}
+                    age={friend.age} />
       })
 
-      const pets = friends.map((friend)=>{
-          return friend.pets
+      const displayPets = friends.map((friend)=>{
+           const temp = friend.pets.map((pet, i)=>{
+             return <Pet key={pet.name +i}
+             name={pet.name}
+             breed={pet.breed}/>
+           })
+            return <div>{friend.name}'s' Pets:{temp}</div>
       })
-
-      for(var i = 0; i < pets.length; i++){
-          var temp = pets[i]
-      displayPetsTemp = temp.map((pet, i)=>{
-          return <li key={friend.pets[]}
-      })
-      display
-    }
 
     return(
         <div className='container'>
-            <ul className="displayFriendsStyle">
+            <div className="displayFriendsStyle">
             {displayFriends}
-            </ul>
-            <ul className="displayPetsStyle">
+            </div>
+            <div>
+            </div>
+            <div className="displayPetsStyle">
             {displayPets}
-            </ul>
+            </div>
 
         </div>
     )

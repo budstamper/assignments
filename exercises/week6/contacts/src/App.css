@@ -1,0 +1,15 @@
+
+.container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "f p"
+}
+
+.displayFriendsStyle{
+    grid-area: f;
+}
+
+.displayPetsStyle{
+    grid-area: p;
+}

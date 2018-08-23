@@ -4,3 +4,63 @@ body {
   font-family: sans-serif;
   background-color: black;
 }
+
+.topRow{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "a 1"
+  "b 2";
+}
+
+.bottomRow{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "ca xt"
+  "d xv";
+}
+
+.a{
+  grid-area:a;
+}
+
+.bear{
+  grid-area:b;
+}
+
+.c{
+  grid-area:ca;
+}
+
+.d{
+  grid-area:d;
+}
+
+.info1{
+  grid-area:1;
+  color:white;
+  background-color: #888888;
+  margin: 10px;
+}
+
+.info2{
+  grid-area:2;
+  color:white;
+  background-color: #888888;
+  margin: 10px;
+}
+
+.info3{
+  grid-area:xt;
+  color:white;
+  background-color: #888888;
+  margin: 10px;
+}
+
+.info4{
+  grid-area:xv;
+  color:white;
+  background-color: #888888;
+  margin: 10px;
+}
