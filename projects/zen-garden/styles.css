@@ -18,6 +18,7 @@
     src: url('./resources/verdemoderna.woff') format('woff')
 }
 
+
 .container{
     margin: -8px -8px -8px -8px;
     display: grid;
@@ -44,6 +45,7 @@
 
 .mainleft{
     grid-area: ml;
+    width: 68%;
 }
 
 .title{
@@ -100,7 +102,8 @@
     }
 
     .mainleft{
-        grid-area: ml;
+        grid-area: h;
+    width: 68%;
     }
 
     .viewContainer{
@@ -110,16 +113,6 @@
         background-attachment: fixed, fixed, scroll;
         background-image:url("./resources/gridlines-opaque.png"), url("./resources/contours-opaque.png"), url('./resources/huntington.jpg');
         background-repeat: repeat, repeat, no-repeat;
-    }
-    
-    .view{
-        padding: 0;
-        margin-top: 0;
-        margin-left: 0;
-        padding-left: 360px;
-        padding-right: 360px;
-        text-align: center;
-        background-color:rgba(230,230,230, 0.2);
     }
 
 
@@ -164,6 +157,7 @@
 
     .mainleft{
         grid-area: ml;
+    width: 68%;
     }
     
     .view{

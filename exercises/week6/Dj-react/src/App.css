@@ -1,0 +1,37 @@
+
+
+.container{
+    display: grid;
+    margin: 10%;
+    padding: 25%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "a b"
+    "c d"
+    "e e";
+}
+
+.sa{
+  grid-area: a;
+}
+
+.sb{
+  grid-area: b;
+}
+
+.sc{
+  grid-area: c;
+}
+
+.sd{
+  grid-area: d;
+}
+
+.buttons{
+  grid-area: e;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
