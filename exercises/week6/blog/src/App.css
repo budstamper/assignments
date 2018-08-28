@@ -7,7 +7,12 @@
   text-align: center;
 }
 
-.NavContianer{
+.navContainer2{
+  width:100%;
+}
+
+.NavContainer{
+  height:34px;
   max-width: 1140px;
   padding-right: 15px;
   padding-left: 15px;
@@ -17,13 +22,20 @@
   font-weight: 400;
   line-height: 1.5;
   padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .5rem 1rem;
+}
+
+.heeder{
+  background-image: url("https://blackrockdigital.github.io/startbootstrap-clean-blog/img/home-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .headcont{
-        background-image: url("https://blackrockdigital.github.io/startbootstrap-clean-blog/img/home-bg.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
         text-align: center;
         color: white;
         height: 530px;

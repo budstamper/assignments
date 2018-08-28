@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Navbar from './components/Navbar'
 import Header from './components/Header'
 import BlogList from './components/BlogList'
 import Footer from './components/Footer'
@@ -11,9 +12,13 @@ library.add(faStroopwafel)
 class App extends Component {
 
   render() {
+
     return (
       <div>
-        <Header />
+        <div className="heeder">
+          <Navbar />
+          <Header />
+        </div>
         <BlogList />
         <Footer />
       </div>

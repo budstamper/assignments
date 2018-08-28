@@ -1,34 +1,50 @@
 
+body{
+  background-color: yellow;
+}
 
 .container{
     display: grid;
-    margin: 10%;
-    padding: 25%;
-    grid-template-columns: 1fr 1fr;
+    margin: 25px;
+    padding: 25px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "a b"
-    "c d"
-    "e e";
+    ". a b ."
+    ". c d ."
+    ". e e .";
 }
 
 .sa{
   grid-area: a;
+  height:200px;
+  margin: 10px;
+  width: 200px;
 }
 
 .sb{
   grid-area: b;
+  height:200px;
+  margin: 10px;
+  width: 200px;
 }
 
 .sc{
   grid-area: c;
+  height:200px;
+  margin: 10px;
+  width: 200px;
 }
 
 .sd{
   grid-area: d;
+  height:200px;
+  margin: 10px;
+  width: 200px;
 }
 
 .buttons{
   grid-area: e;
+  margin: 50px;
   display: flex;
   align-items: center;
   justify-content: space-around;
