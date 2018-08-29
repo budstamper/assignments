@@ -1,0 +1,25 @@
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-image: url('https://memefly.me/i/99abc9f2701388cd826813a21592a879.jpg');
+  background-size: contain;
+}
+
+.container{
+  position: relative;
+  height: 100vh;
+}
+
+.content{
+  text-align: center;
+}
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  padding: 20px;
+  background-color: #bbbbbb;
+}
