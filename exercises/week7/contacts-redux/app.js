@@ -53,7 +53,7 @@ function reducer(prevState = state, action){
     switch(action.type){
         case "ADD_CONTACT":
             return {
-                contacts: prevState.contacts.push(action.newContact)
+                contacts: [...prevState.contacts, ///TODO
             }
         case "SUBTRACT_ONE":
             return {
