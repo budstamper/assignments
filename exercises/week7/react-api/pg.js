@@ -1,4 +1,6 @@
-// var axios = require('axios')
+var axios = require('axios')
+
+var timer = Date.now()
 
 // axios.get('https://randomuser.me/api/').then(response=>{
 //     var x = JSON.stringify(response.data)
@@ -9,3 +11,9 @@
 //     console.log(response)
 // })
 
+axios.get('http://ron-swanson-quotes.herokuapp.com/v2/quotes/100')
+.then(response => {
+    console.log(response.data)
+}).then(()=>{
+    console.log(Date.now()-timer)
+})

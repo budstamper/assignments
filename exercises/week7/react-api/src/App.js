@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
 import { Switch, Route} from 'react-router-dom'
-import Nav from './nav'
-import Footer from './footer'
-import Home from './home'
-import About from './about'
-import Services from './services'
+import Nav from './Nav'
+import Footer from './Footer'
+import Home from './Home'
+import Ron from './Ron'
+import Liberty247 from './Liberty247'
 
 class App extends Component {
 
@@ -16,9 +16,9 @@ class App extends Component {
         <Switch className="content">
           <Route exact path='/' component={ Home } />
           <Route exact path='/Ron' component={ Ron } />
-          <Route exact path='/liberty247' component={ Liberty } />
+          <Route exact path='/Liberty247' component={ Liberty247 } />
         </Switch>  
-        <Footer />
+        {/* <Footer /> */}
       </div>
     );
   }

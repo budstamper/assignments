@@ -5,6 +5,7 @@ import Adder from './Adder.js'
 import { addOne } from './Redux'
 import { connect } from 'react-redux'
 import UglyThing from './UglyThing.js'
+import store from './Redux'
 
 class App extends Component {
   constructor(props){
@@ -17,16 +18,14 @@ class App extends Component {
     }
   }
 
-  store.subscribe(() => {
+  store.subscribe(() =>
     // When state will be updated(in our case, when items will be fetched), 
     // we will update local component state and force component to rerender 
     // with new data.
 
     this.setState({
-      items: store.getState().items;
-    });
-  });
-}
+      items: store.getState().items
+    }))
 
 
   render() {
