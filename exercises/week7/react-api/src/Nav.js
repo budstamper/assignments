@@ -6,8 +6,11 @@ class Nav extends Component {
     render(){
 
         const styles = {
-            borderRadius: '10px 10px 10px 10px',
-            backgroundColor: "#ffffff50",
+            borderRadius: '0px 0px 20px 20px',
+            backgroundColor: "#ffffff93",
+            marginLeft: '10%',
+            marginRight: '10%',
+            marginBottom: '5%',
             height: "50px",
             display: 'flex',
             justifyContent: 'space-evenly',
@@ -16,6 +19,7 @@ class Nav extends Component {
         }
 
         const styles2 = {
+            backgroundColor: "#ffffff00",
             textDecoration: 'none',
             textAlign: 'center',
         }

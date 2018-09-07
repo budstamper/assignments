@@ -50,18 +50,7 @@ class Ron extends Component {
             backgroundRepeat: 'no-repeat',
             backgroundPosition: "center",
             backgroundSize: 'cover',
-            height: '500px',
             position: 'relative',
-        }
-
-        const styles2 = {
-            position: 'absolute',
-            bottom: '0',
-            fontSize: '2.2em',
-            fontWeight: 'bold',
-            color: 'whitesmoke',
-            padding: '0% 5% 0% 5%',
-            textAlign: 'center',
         }
 
         const styles3 = {
@@ -77,6 +66,8 @@ class Ron extends Component {
             position: 'fixed',
             minWidth: '100%',
             minHeight: '100%',
+            top: '0',
+            left: '0',
             width: 'auto',
             height: 'auto',
             zIndex: '-100',
@@ -85,8 +76,8 @@ class Ron extends Component {
         return (
             <div>
                 <div style={styles4}></div>
-                <div style={styles} onClick={handleRon}>
-                <p style={styles2}>{this.state.ron}</p>
+                <div className='ron' style={styles} onClick={handleRon}>
+                <p className="quote">{this.state.ron}</p>
                 <br></br>
             </div>
             <p style={styles3}>Click the image to cycle.</p>

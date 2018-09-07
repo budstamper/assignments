@@ -61,31 +61,34 @@ class Home extends Component {
       }
 
       render(){
-        if (this.state.debt === null) return null;
 
-        const displayDebt = this.state.debt.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+        const displayDebt = () => {
+            if (this.state.debt === null) return "000,000,000,000.00";
+            return this.state.debt.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+        }
 
         // console.log(typeof this.state.debt, typeof this.state.rate)
 
-        tick = setInterval(() =>{
-          this.setState({debt: this.state.debt+(this.state.speed*10)})
-        }, 10)
+
+        if (this.state.debt !== null){
+          tick = setInterval(() =>{
+            this.setState({debt: this.state.debt+(this.state.speed*10)})
+          }, 10)
+        }
 
         const styles = {
           marginTop: '15%',
           textAlign: 'center',
-          backgroundColor: "grey",
+          backgroundColor: "#80808090",
         }
-
-        // <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
-        //         <source src="polina.webm" type="video/webm">
-        //         <source src="polina.mp4" type="video/mp4">
-        //     </video>
 
         return (
             <div style={styles} className="debt">
                 <h1>Total US Debt</h1>
-                <h1>{`$${displayDebt}`}</h1>
+                <h1>{`$${displayDebt()}`}</h1>
+                <video playsinline autoplay loop poster="listen.jpg" id="bgvid">
+                    <source src="listen.mp4" type="video/mp4"></source>
+                </video>
             </div>
         );
     };
