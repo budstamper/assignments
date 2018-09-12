@@ -78,6 +78,7 @@ class Home extends Component {
 
         const styles = {
           marginTop: '15%',
+          padding: '5px',
           textAlign: 'center',
           backgroundColor: "#80808090",
         }
@@ -86,8 +87,8 @@ class Home extends Component {
             <div style={styles} className="debt">
                 <h1>Total US Debt</h1>
                 <h1>{`$${displayDebt()}`}</h1>
-                <video playsinline autoplay loop poster="listen.jpg" id="bgvid">
-                    <source src="listen.mp4" type="video/mp4"></source>
+                <video preload="true" id="bgvid" autoplay="true" loop="true" poster="/Users/student/Dev/assignments/exercises/week7/react-api/src/listen.jpg">
+                  <source src="https://memefly.me/i/listen.mp4" type="video/mp4"/>
                 </video>
             </div>
         );

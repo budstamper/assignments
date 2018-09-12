@@ -3,7 +3,6 @@ import { connect } from 'react-redux'
 import { addOne } from './Redux'
 
 const Adder = (props) => {
-    console.log(props)
 
     return (
         <div>
@@ -16,4 +15,4 @@ const Adder = (props) => {
 };
 
 
-export default Adder
+export default connect(state=>state, {})(Adder)

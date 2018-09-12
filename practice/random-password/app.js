@@ -10,4 +10,4 @@ function randPassword(num){
     return password;
 }
 
-randPassword(2000);
+randPassword(16);

@@ -3,29 +3,32 @@ import { createStore } from 'redux'
 
 // Init state
 const initState = {
-        url: '',
-        title: '',
-        description: '',
     list: [],
 }
 
 
+
 // Action 
-export const addOne = () => {
+export const addOne = (data) => {
+    console.log("adding One", data)
     return {
-        type: 'ADD_ONE'
+        type: 'ADD_ONE',
+        data: data
     }
 }
 
-export const deleteIt = () => {
+export const deleteIt = (data) => {
     return {
-        type: 'DELETE'
+        type: 'DELETE',
+        num: data
     }
 }
 
-export const edit = () => {
+export const edit = (data) => {
+    console.log("edit",data)
     return {
-        type: 'EDIT'
+        type: 'EDIT',
+        data: data
     }
 }
 
@@ -33,26 +36,26 @@ export const edit = () => {
 const reducer = (prevState = initState, action) => {
     switch(action.type){
         case 'ADD_ONE':
+        console.log('reducerAdd', action.data)
             const thingy = {
-                title: prevState.title,
-                url: prevState.url,
-                description: prevState.description
+                title: action.data.title,
+                url: action.data.url,
+                description: action.data.description,
+                number: prevState.list.length
             }
             return {
-                list: [...prevState.list, thingy],
-                    title: '',
-                    url: '',
-                    description:'',
+                list: [...prevState.list, thingy]
             }
         case "DELETE":
+            prevState.list.splice(action.num, action.num+1)
             return {
-                time: prevState.time%1,
-                laps: prevState
+                list: [...prevState.list]
             }
         case "EDIT":
+        console.log("editing", action.data)
+        prevState.list[action.data.number] = action.data
             return {
-                time: prevState,
-                laps: prevState.laps.push(prevState.time)
+                list: [...prevState.list]
             }
         default:
             return prevState
@@ -60,4 +63,10 @@ const reducer = (prevState = initState, action) => {
 }
 
 
+
+
 export default createStore(reducer)
+
+
+
+

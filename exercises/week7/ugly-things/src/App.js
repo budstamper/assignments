@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Adder from './Adder.js'
-import { addOne } from './Redux'
+import { addOne, deleteIt, edit } from './Redux'
 import { connect } from 'react-redux'
 import UglyThing from './UglyThing.js'
 import store from './Redux'
@@ -14,38 +14,48 @@ class App extends Component {
       title: '',
       url: '',
       description: '',
+      number: '',
       list: [],
     }
-  }
 
-  store.subscribe(() =>
+  store.subscribe(() => {
     // When state will be updated(in our case, when items will be fetched), 
     // we will update local component state and force component to rerender 
     // with new data.
-
     this.setState({
-      items: store.getState().items
-    }))
+      list: store.getState().list
+    })})
+  }
 
-
-  render() {
+  render(){
 
     const handleChange = (e) =>{
-      console.log('chaning')
+      console.log('changing')
       this.setState({
         [e.target.name]: e.target.value,
       })
+      console.log(this.state)
     }
-  
+
   const handleSubmit = (e) =>{
-    console.log('adding')
-      addOne()
+    e.preventDefault()
+    console.log('adding', this.state)
+      store.dispatch(addOne(this.state))
+  }
+  const handleEdit = (data) =>{
+    store.dispatch(edit(data))
+  }
+
+  const handleDelete = (num) =>{
+    store.dispatch(deleteIt(num))
   }
 
   const uggos = this.state.list.map((a,i)=>{
     console.log('mapping')
     return <UglyThing key={a+i}
-               uggo={a}/>
+               uggo={a}
+               handleDelete={handleDelete}
+               handleEdit={handleEdit}/>
 })
 
 const styles3 = {
@@ -57,7 +67,8 @@ const styles3 = {
 
     return (
       <div>
-        <Adder />
+        <Adder handleChange={handleChange}
+               handleSubmit={handleSubmit}/>
         <div style={styles3}>
             {uggos}
         </div>
@@ -66,4 +77,8 @@ const styles3 = {
   }
 }
 
-export default connect(null, { addOne })(App)
+
+
+export default connect(state=>state, { addOne, deleteIt, edit })(App)
+
+
