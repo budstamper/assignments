@@ -42,6 +42,7 @@ class App extends Component {
     console.log('adding', this.state)
       store.dispatch(addOne(this.state))
   }
+  
   const handleEdit = (data) =>{
     store.dispatch(edit(data))
   }
@@ -80,5 +81,9 @@ const styles3 = {
 
 
 export default connect(state=>state, { addOne, deleteIt, edit })(App)
+
+
+
+
 
 

@@ -8,12 +8,12 @@ const bounties = [
         fname: "Luke",
         lname: "Skywalker",
         living: true,
-        price: 200,
+        price: 300,
         type: 'jedi',
         id: uuidv4()
     },{
-        name: 'Anakin',
-        name: 'Skywalker',
+        fname: 'Anakin',
+        lname: 'Skywalker',
         living: false,
         price: 100,
         type: 'sith',
@@ -34,23 +34,28 @@ app.get("/bounty/:id", (req, res) => {
 })
 
 app.post("/bounty/", (req, res) => {
-    req[id] = uuidv4()
-    bounties.push(req)
+    console.log("posting", req.body)
+    req.body.id = uuidv4()
+    req.body.living = true
+    bounties.push(req.body)
     res.send(bounties)
 })
 
 app.put("/bounty/:id", (req, res) => {
-    console.log("putting")
-    console.log(req.body)
+    console.log("putting", req.body, req.params)
+    // console.log(req.body)
     const found = bounties.find(a => a.id === req.params.id)
-    const foundIndex = bounties.find(a => a.id === req.params.id)
+    const foundIndex = bounties.findIndex(b => b.id === req.params.id)
     const newBounty = Object.assign(found, req.body)
+    // console.log("found: ", found, "found index: ", foundIndex, "new bounty: ", newBounty)
     bounties.splice(foundIndex, 1, newBounty)
+    console.log(bounties)
     res.send(bounties)
 })
 
 app.delete("/bounty/:id", (req, res) => {
-    bounties = bounties.filter(a=>a.id !== req.params.id)
+    console.log("deleting", req.params)
+    bounties.splice(bounties.find(a=>a.id === req.params.id), 1)
     res.send(bounties)
 })
 
@@ -58,11 +63,4 @@ app.delete("/bounty/:id", (req, res) => {
 app.listen(4000, () => {
     console.log("starting")
 })
-
-
-
-
-
-
-
 
