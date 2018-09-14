@@ -19,7 +19,3 @@ app.use('/bounty', require('./bountyRouter.js'))
 app.listen(4001, () => {
     console.log("starting")
 })
-
-
-
-
