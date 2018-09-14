@@ -26,12 +26,17 @@ app.post("/", (req, res) => {
     res.send(database)
 })
 
+app.put("/:id", (req, res) => {
+    var x = database.find(a=>a.id===re.params.id)
+    var index = database.findIndex(a=>a.id===re.params.id)
+    for(var j in req.params){
+        x[`${j}`] = re.params[`${j}`]
+    }
+    database[index] = x
+    res.send(database)
+})
+
 
 app.listen(5000, () => {
     console.log("Hello World")
 })
-
-
-
-
-
