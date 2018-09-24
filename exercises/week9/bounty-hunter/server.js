@@ -8,7 +8,7 @@ var mongoose = require('mongoose')
 app.use(express.json())
 app.use(morgan('dev'))
 
-mongoose.connect('mongodb.://localhost:27017/mogoose-intro', { useNewUrlParser: true})
+mongoose.connect('mongodb://localhost:27017/mogoose-intro', { useNewUrlParser: true})
     .then(()=>console.log('Successfully connected to mongoDB'))
     .catch(err=>console.log(err))
 

@@ -1,0 +1,7 @@
+body{ 
+    background: url(https://memefly.me/i/883e12c1b04210c4cfe8e4ca76dc3687.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }

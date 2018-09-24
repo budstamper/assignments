@@ -13,7 +13,7 @@ class Ron extends Component {
           'https://memefly.me/i/072bb3e3fb335af47f83402458842284.jpg', 'https://memefly.me/i/98424fd8e4b6f935e3a6b64b2730268c.jpg'],
           data: []
         }
-    
+
       }
       componentDidMount(){
         axios.get("http://ron-swanson-quotes.herokuapp.com/v2/quotes/100").then(response =>{
