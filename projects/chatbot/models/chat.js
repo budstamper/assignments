@@ -8,6 +8,9 @@ const chatSchema = new mongoose.Schema({
     bot: {
         type: String,
         required: true
+    },
+    inResponse:{
+        type: String,
     }
 })
 

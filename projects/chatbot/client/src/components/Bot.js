@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
+// import Redux from 'redux'
 
 export default class Bot extends Component {
     constructor(){
         super()
         this.state = {
-            bots: ['Mokky', 'Bastiat'],
-            chat: ''
+            bots: ['Mokky', 'Bastiat']
         }
     }
 
@@ -43,8 +43,8 @@ export default class Bot extends Component {
         return (
             <div style={styles2}>
                 Choose a Bot to chat with!
-                <Link to="/chat"><div style={styles}>Mokky</div></Link>
-                <Link to="/chat"><div style={styles}>Bastiat</div></Link>
+                <Link to="/mokky"><div style={styles}>Mokky</div></Link>
+                <Link to="/bastiat"><div style={styles}>Bastiat</div></Link>
             </div>
         )
     }
