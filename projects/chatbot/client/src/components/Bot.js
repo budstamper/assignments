@@ -34,7 +34,7 @@ export default class Bot extends Component {
             color: 'green',
             textDecoration: 'none',
             textAlign: "center",
-            paddingTop: "10%",
+            paddingTop: "5%",
             height: '100vh',
             width: '100vw',
 
@@ -42,7 +42,7 @@ export default class Bot extends Component {
 
         return (
             <div style={styles2}>
-                Choose a Bot to chat with!
+                <h2>Choose a Bot to chat with!</h2>
                 <Link to="/mokky"><div style={styles}>Mokky</div></Link>
                 <Link to="/bastiat"><div style={styles}>Bastiat</div></Link>
             </div>

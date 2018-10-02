@@ -13,7 +13,6 @@ mongoose.connect('mongodb://localhost:27017/chatbot', { useNewUrlParser: true})
     .then(()=>console.log('Successfully connected to mongoDB'))
     .catch(err=>console.log(err))
 
-
 app.use('/chat', chatRoutes)
 
 
